@@ -1,6 +1,6 @@
 {
   "name": "solidjs-flutterwave",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Flutterwave payment gateway integration with SolidJS",
   "homepage": "https://github.com/rnwonder/solidjs-flutterwave",
   "repository": {
