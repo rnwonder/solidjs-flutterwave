@@ -70,7 +70,7 @@ pnpm add solidjs-flutterwave
                    onClose
                 )
              }}>
-		Paystack Hooks Implementation
+		Flutterwave Hooks Implementation
              </button>
         </div>
       );
