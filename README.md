@@ -62,12 +62,14 @@ pnpm add solidjs-flutterwave
       return (
         <div>
             <button onClick={() => {
-                initializePayment((response) => {
+                initializePayment(
+                   (response) => {
 			onSuccess(response)
 			action().close()
-		},
-		onClose
-             )}}>
+		   },
+                   onClose
+                )
+             }}>
 		Paystack Hooks Implementation
              </button>
         </div>
