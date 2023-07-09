@@ -27,11 +27,11 @@ pnpm add solidjs-flutterwave
 
   
   const config = {
-      public_key: 'FLWPUBK_TEST_dsdfghuytfd2345678gvxxxxxxxxxx,  
-	  amount: 1000,  
-	  currency: "NGN",  
-	  payment_options: ["card", "ussd", "banktransfer"],  
-	  customer: {  
+	public_key: 'FLWPUBK_TEST_dsdfghuytfd2345678gvxxxxxxxxxx,
+	amount: 1000,  
+	currency: "NGN",  
+	payment_options: ["card", "ussd", "banktransfer"],  
+	customer: {
 		email: "solidjsflutter@yopmail.com",  
 		name: "Solid Flutterwave",  
 		phone_number: "08102909304",  
@@ -63,10 +63,13 @@ pnpm add solidjs-flutterwave
         <div>
             <button onClick={() => {
                 initializePayment((response) => {
-				  onSuccess(response)
-				  action().close()
-				}, onClose)
-            }}>Paystack Hooks Implementation</button>
+			onSuccess(response)
+			action().close()
+		},
+		onClose
+             )}}>
+		Paystack Hooks Implementation
+             </button>
         </div>
       );
   };
